@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #EDEDED;
+}
+body {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Fonts */
+@font-face {
+	font-family: 'high_tidebold';
+	src: url('../fonts/high_tide_bold-webfont.eot');
+	src: url('../fonts/high_tide_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/high_tide_bold-webfont.ttf') format('truetype'), url('../fonts/high_tide_bold-webfont.svg#high_tidebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'high_tidesans';
+	src: url('../fonts/hightide_sans-webfont.eot');
+	src: url('../fonts/hightide_sans-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/hightide_sans-webfont.ttf') format('truetype'), url('../fonts/hightide_sans-webfont.svg#high_tidesans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'coffee_serviceregular';
+	src: url('../fonts/sideshow_-_coffeeservice-webfont.eot');
+	src: url('../fonts/sideshow_-_coffeeservice-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/sideshow_-_coffeeservice-webfont.woff') format('woff'), url('../fonts/sideshow_-_coffeeservice-webfont.ttf') format('truetype'), url('../fonts/sideshow_-_coffeeservice-webfont.svg#coffee_serviceregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Hacks */
+.no_border {
+	border: 0 !important;
+}
+.last_row {
+	padding-bottom: 0 !important;
+}
+.border_none {
+	border: none !important;
+}
+
+
+/*--------------------------------------------------------------------------------------------
+	MAIN CONTAINER
+--------------------------------------------------------------------------------------------*/
+.main-container {
+  position:relative;
+  margin:0 auto;
+  display: grid;
+  width: 1024px;
+  height: 600px;
+  border: solid 1px red;
+  color:#ededed;
+
+ /* GRID */
+ grid-template-columns: 33% 1fr 1fr;
+ grid-template-rows: 80px 1fr 1fr 100px;
+ grid-template-areas:
+      "header header header"
+      "sidebar content-1 content-1"
+      "sidebar content-2 content-3"
+      "footer footer footer";
+  grid-gap: 1rem;
+
+}
+
+.item{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+/*--------------------------------------------------------------------------------------------
+	TOP SECTION
+--------------------------------------------------------------------------------------------*/
+header {
+  position:relative;
+	background-color: #FF0654;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 999;
+
+  /* GRID */
+  grid-area: header;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
+}
+
+
+@media screen and (max-width: 1024px) {
+  /*--------------------------------------------------------------------------------------------
+  	MAIN CONTAINER
+  --------------------------------------------------------------------------------------------*/
+  .main-container {
+    width:100%;
+
+  }
+
+
+}
