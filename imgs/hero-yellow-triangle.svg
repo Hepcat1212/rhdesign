@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="416px" height="257px" viewBox="0 0 416 257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Yellow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="98.6750502%" y1="0%" x2="1.23584053%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FCEAB6" offset="0%"></stop>
+            <stop stop-color="#F7D07F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(0.000000, -230.000000)" fill="url(#linearGradient-1)">
+            <g id="Background" transform="translate(-163.000000, -233.000000)">
+                <path d="M147,463 L576.997926,463 C578.102496,463 578.997926,463.895431 578.997926,465 C578.997926,465.698082 578.63394,466.345651 578.037591,466.708537 L150.039665,727.150328 C149.096066,727.724519 147.865654,727.425055 147.291463,726.481456 C147.100829,726.168177 147,725.808514 147,725.441792 L147,463 Z" id="Yellow"></path>
+            </g>
+        </g>
+    </g>
+</svg>
