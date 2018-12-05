@@ -7,7 +7,7 @@ html {
 	background-color: #EDEDED;
 }
 body {
-	overflow: hidden;
+	overflow: visable;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -40,10 +40,9 @@ body {
 .main-container {
   position:relative;
   margin:0 auto;
-  /* display: grid; */
+  display: grid;
   width: 1500px;
-  height: 600px;
-  border: solid 1px red;
+  height: auto;
   color:#ededed;
 	font-family: questa, serif;
 	font-style: normal;
@@ -52,13 +51,13 @@ body {
 
  /* GRID */
  grid-template-columns: 33% 1fr 1fr;
- grid-template-rows: 25% 100px auto;
  grid-template-areas:
       "header header header"
       "hero hero hero"
-      "sidebar content-2 content-3"
+      "main-section main-section main-section"
       "footer footer footer";
   grid-gap: 1rem;
+	/* grid-template-rows: auto auto auto auto auto auto; */
 
 }
 
@@ -73,18 +72,22 @@ header {
 	margin: 0 auto;
 	padding: 0;
 	z-index: 999;
-	border: solid 1px red;
+
 
   /* GRID */
-	grid-template-columns:5% 33% 1fr 1fr;
+	grid-template-columns: 5% 45% 50%;
   grid-area: header;
+	grid-column: 1/4;
 
 
 }
 .logo{
   position: relative;
+	top: 10px;
   width:70px;
   height:65px;
+
+	/* GRID */
 	grid-area:logo;
 	grid-column: 2/3;
 
@@ -95,24 +98,28 @@ header {
 
 }
 
+ .logo img{
+	width:70%;
+}
+
+
+
 .nav{
   position: relative;
   width:100%;
   height:65px;
 	font-size: 16px;
 	font-weight: 500;
-	border: solid 1px red;
 
 	 /* GRID */
 	 grid-area:nav;
-	 grid-column: 3/5;
-	 align-self: end;
-	 justify-self: center;
+	 grid-column: 3/4;
+
 }
 
 .nav ul{
 	list-style-type: none;
-	width:100%;
+	width:75%;
 	height:auto;
 	margin:0;
 	padding:0;
@@ -128,7 +135,7 @@ header {
 	text-align: center;
   width:30%;
   height:65px;
-	border: solid 1px red;
+ /* border: solid 1px red; */;
 
  	/* Vertical Alignment */
 	vertical-align: middle;
@@ -143,7 +150,7 @@ header {
 
 span.selected-triangle{
 	position:absolute;
-	top: -110px;
+	top: -120px;
 	width: 0px;
 	height: 0px;
 	border-top: 60px solid transparent;
@@ -151,9 +158,9 @@ span.selected-triangle{
 	border-left: 100px solid #FF0654;
 
   /* Border Radius */
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 
 }
 
@@ -161,22 +168,25 @@ span.selected-triangle{
 /*--------------------------------------------------------------------------------------------
 	HERO SECTION
 --------------------------------------------------------------------------------------------*/
-
-
 section.hero{
+	position:relative;
 	background:url("/Users/ryanhepford/Desktop/RH/code/rhdesign/imgs/hero-yellow-triangle.svg") no-repeat -50px 80px;
 	display: grid;
 	width: 100%;
+	height: auto;
 	margin: 0 auto;
 	padding: 45px 0;
-	border: solid 1px red;
+	border: solid 1px /* border: solid 1px red; */;
 
   /* GRID */
-	grid-template-columns:5% 80% 1fr;
+	grid-template-columns:10% 70% 10%;
   grid-area: hero;
-	grid-column: 1/3;
+	grid-column: 1/4;
 
+}
 
+.hero-case-study{
+		top:-150px;
 }
 
 h1{
@@ -185,36 +195,207 @@ h1{
 	width:100%;
 	height:auto;
 	color:#222932;
+	margin:50px 0 25px 0;
+	padding:0;
 
 	/* GRID */
-	align-self: end;
-  justify-self: center;
 	grid-column: 2/3;
 }
 
 h2{
 	font-size: 24px;
-	font-weight: 300;
+	font-weight: 350;
 	width:100%;
 	height:auto;
 	color:#222932;
+	margin:0;
+	padding:0;
 
 	/* GRID */
-	align-self: end;
-  justify-self: center;
 	grid-column: 2/3;
 }
 
+span.inline-highlight{
+	font-weight: 450;
 
+}
 
-@media screen and (max-width: 1024px) {
-  /*--------------------------------------------------------------------------------------------
-  	MAIN CONTAINER
-  --------------------------------------------------------------------------------------------*/
-  .main-container {
-    width:100%;
+/*--------------------------------------------------------------------------------------------
+	MAIN SECTION
+--------------------------------------------------------------------------------------------*/
+section.main-section{
+	display: grid;
+	width: 100%;
+	height:auto;
+	margin: 0 auto;
+	padding: 45px 0;
+	border: solid 1px /* border: solid 1px red; */;
 
-  }
+  /* GRID */
+	grid-template-columns:5% 45% 35%;
+  grid-area: main-section;
+	grid-column: 1/4;
 
 
 }
+
+.grid-left{
+	grid-column: 2/4;
+}
+
+.grid-right{
+	grid-column: 3/4;
+}
+
+.tile-bottom{
+	margin: 0 0 -70px 0;
+}
+
+
+.case-thumb{
+	position:relative;
+	width:457px;
+	height:349px;
+	border: solid 1px /* border: solid 1px red; */;
+	cursor:pointer;
+
+	/* Border Radius */
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+
+  /* Box Shadow */
+	-webkit-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.5);
+
+}
+
+span.label {
+	position: relative;
+	padding: 8px 70px;
+	height: 25px;
+	table-layout: auto;
+	min-width: 20%;
+	left: 300px;
+	top: -305px;
+	background-color: #222932;
+	border: solid 3.5px #EDEDED;
+	color: #fff;
+	font: 12px font-weight:300px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+
+	/* Border Radius */
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.case-thumb img {
+	width: 100%;
+	height: 100%;
+}
+
+.blue-block {
+	position:relative;
+	background:#222932;
+	color:#EDEDED;
+	padding:80px 55px;
+	margin:100px 0;
+	height:auto;
+	font-size:54px;
+	font-weight:400;
+
+	/* Border Radius */
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+
+	/* GRID */
+	grid-column: 1/3;
+}
+
+
+/* social */
+
+.social-list{
+	position: relative;
+	width:100%;
+	margin:0 auto;
+	padding:0;
+}
+
+
+.social-list ul{
+	position: relative;
+	width:100%;
+	list-style-type: none;
+	float:left;
+	margin:0 auto;
+}
+
+.social-list li{
+	width:10%;
+	padding:20px;
+	float:left;
+}
+
+
+.social-list li img{
+	width:55%;
+
+}
+
+
+footer{
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	height:500px;
+
+}
+
+
+aside.sidebar{
+	  width: 30px;
+		height: 50px;
+		background: red;
+		position: relative;
+   }
+
+aside.sidebar:before {
+		content: "";
+		width: 70px;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-bottom: 29px solid red;
+		border-left: 29px;
+		border-right: ;
+	}
+
+aside.sidebar:after {
+	  content: "";
+		width: 70px;
+		height: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-top: 29px solid red;
+		border-left:;
+		border-right: 50px solid #eee;
+	 }
+
+
+
+/* @media screen and (max-width: 1024px) {} */
+  /*--------------------------------------------------------------------------------------------
+  	MAIN CONTAINER
+  --------------------------------------------------------------------------------------------*/
+  /* .main-container {
+    width:100%;
+
+  } */
