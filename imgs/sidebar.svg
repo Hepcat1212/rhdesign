@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="276px" viewBox="0 0 375 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Sidebar back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Innovation-League" transform="translate(0.000000, -584.000000)">
+            <g id="Sidebar" transform="translate(0.000000, 584.000000)">
+                <g id="Info-Bar-Navy">
+                    <g id="Rectangle-3">
+                        <g id="Sidebar-back" transform="translate(-37.000000, 0.000000)">
+                            <path d="M2,0 L576.169176,-3.44169138e-14 C576.721461,-3.45183668e-14 577.169176,0.44771525 577.169176,1 C577.169176,1.35613274 576.979774,1.68539162 576.67192,1.86443527 L3.00548827,335.501253 C2.05065943,336.056569 0.826445295,335.7327 0.271129459,334.777871 C0.0935478775,334.472531 8.3532029e-14,334.125607 8.34887715e-14,333.772383 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 Z" id="Path" fill="#222932"></path>
+                            <path d="M422.443478,111 L110.5,296.5" id="Line" stroke="#F7D07F" stroke-width="2" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

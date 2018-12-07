@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="276px" viewBox="0 0 375 276" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Innovation-League" transform="translate(0.000000, -584.000000)" fill="#222932">
+            <g id="Sidebar" transform="translate(0.000000, 584.000000)">
+                <g id="Info-Bar-Navy">
+                    <g id="Rectangle-3">
+                        <path d="M-35,0 L539.169176,-3.44169138e-14 C539.721461,-3.45183668e-14 540.169176,0.44771525 540.169176,1 C540.169176,1.35613274 539.979774,1.68539162 539.67192,1.86443527 L-33.9945117,335.501253 C-34.9493406,336.056569 -36.1735547,335.7327 -36.7288705,334.777871 C-36.9064521,334.472531 -37,334.125607 -37,333.772383 L-37,2 C-37,0.8954305 -36.1045695,2.02906125e-16 -35,0 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
