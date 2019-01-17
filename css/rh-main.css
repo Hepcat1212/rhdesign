@@ -104,6 +104,7 @@ header {
 
 .nav{
   position: relative;
+	left:5px;
   width:100%;
   height:65px;
 	font-size: 18px;
@@ -177,7 +178,7 @@ section.hero{
 	display: grid;
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 60px auto 45px auto;
 	padding: 45px 0;
 	border: solid 1px /* border: solid 1px red; */;
 
@@ -192,6 +193,13 @@ section.hero-case-study{
 		top:-100px;
 		margin: 0 auto -100px auto;
 		padding:0;
+		/* height:570px; */
+		overflow:hidden;
+}
+
+section.hero-case-study img{
+		width:100%;
+		grid-column: 1/4;
 }
 
 h1{
@@ -289,6 +297,11 @@ span.label {
 	height: 100%;
 }
 
+.hawk-feather{
+	position:relative;
+	top:-200px;
+}
+
 
 /* social */
 
@@ -342,6 +355,7 @@ section.case-section{
 	display:grid;
 	padding:0;
 
+
   /* GRID */
 	grid-template-columns:25% 6% 75%;
 	grid-template-areas:
@@ -356,8 +370,8 @@ section.case-section{
 section.case-section p{
 	font-size:18px;
 	color:#222932;
-	line-height:32px;
-	padding:0 0 65px 0;
+	line-height: 34px;
+	padding:0 0 80px 0;
 	margin:0;
 	width:70%;
 	font-weight:400;
@@ -376,19 +390,20 @@ section.case-section p.para-header{
 .main-content{
 	position:relative;
 	width:100%;
-	padding:40px 0;
+	padding:70px 0;
 
 	/* GRID */
 	grid-column:3/4;
 
 }
 
+/* IMG 3 */
 .img-shots-3 {
 	display:grid;
 	position:relative;
 	width:100%;
 	height:auto;
-	margin: 0 0 70px 0;
+	margin: 0 0 100px 0;
 
 	/* GRID */
 	grid-template-columns:25% 25% 25%;
@@ -409,13 +424,13 @@ section.case-section p.para-header{
 
 }
 
-
+/* IMG 2 */
 .img-shots-2 {
 	display:grid;
 	position:relative;
 	width:100%;
 	height:auto;
-	margin: 0 0 70px 0;
+	margin: 0 0 100px 0;
 
 	/* GRID */
 	grid-template-columns:35% 35%;
@@ -436,6 +451,38 @@ section.case-section p.para-header{
 
 }
 
+/* IMG 1 */
+.img-shots-1 {
+	display:grid;
+	position:relative;
+	width:100%;
+	height:auto;
+	margin: 0 0 100px 0;
+
+	/* GRID */
+	grid-template-columns:70%;
+	grid-template-areas:
+	 "img-1"
+	 ;
+  grid-area:case-section;
+	grid-column: 1/4;
+	grid-gap: 0px;
+
+}
+
+.img-shots-1 .img-1{
+	display:grid;
+	position:relative;
+	width:100%;
+	height:auto;
+	justify-self:center;
+}
+
+.img-shots-1 .medium-img{
+	width:45% !important;
+
+}
+
 
 .firstcharacter {
   color: #222932;
@@ -445,7 +492,7 @@ section.case-section p.para-header{
   line-height: 38px;
 	padding:7px 15px 5px;
 	margin: 0 20px 0px 5px;
-	border: solid 3px #F7D07F;
+	border: solid 4px #F7D07F;
 }
 
   aside.sidebar{
@@ -478,6 +525,7 @@ section.case-section p.para-header{
 
 	 .blue-block {
 	 	position:relative;
+		top: -820px;
 	 	background:#222932;
 	 	color:#EDEDED;
 	 	padding:80px 55px;
